@@ -57,6 +57,7 @@ DishDashboardProject/
 
 ### MongoDB (database)
 <img width="1175" height="728" alt="image" src="https://github.com/user-attachments/assets/e7f82eff-4cd6-4e5a-85aa-96d49ad74beb" />
+<img width="1163" height="678" alt="image" src="https://github.com/user-attachments/assets/a05ebe8a-5ef7-471a-a5ce-9d4118cc96e7" />
 <img width="1156" height="371" alt="image" src="https://github.com/user-attachments/assets/a9510a14-bd96-4c71-bdf7-2edce474e017" />
 <img width="1155" height="202" alt="image" src="https://github.com/user-attachments/assets/e2a8fc6b-bc50-4b58-b34b-9a8257ae7ae0" />
 
