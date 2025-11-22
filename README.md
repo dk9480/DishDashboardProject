@@ -54,55 +54,78 @@ DishDashboardProject/
 
 ---
 
+
 ### 2. Configure Backend
 
 Navigate to the backend folder and install dependencies:
 
-```bash
+```
 cd backend
 npm install
+```
 
+Create a `.env` file inside the backend folder:
 
-Create a .env file inside the backend folder:
+```
 MONGO_URI=mongodb://localhost:27017/noshDB
 PORT=5000
+```
 
+---
 
-3. Configure Frontend
+### 3. Configure Frontend
+
+```
 cd ../frontend
 npm install
+```
 
+---
 
-▶️ How to Run the Application
+## ▶️ How to Run the Application
 
-Run database, backend, and frontend in separate terminals.
+Run database, backend, and frontend in **separate terminals**.
 
-1. Start MongoDB
+---
 
+### 1. Start MongoDB
 Ensure your local MongoDB service is running.
 
-2. Start Backend
+---
 
-In /backend:
+### 2. Start Backend
+
+In `/backend`:
+
+```
 node server.js
-
+```
 
 Console will confirm:
 
-MongoDB connection
+- MongoDB connection  
+- Initial data population  
+- Socket.IO initialization  
 
-Initial data population
+---
 
-Socket.IO initialization
+### 3. Start Frontend
 
-3. Start Frontend
+In `/frontend`:
 
-In /frontend:
+```
 npm start
-
+```
 
 App opens at:
+
+```
 http://localhost:3000
+```
+
+---
+
+## 📌 Key Features and API Endpoints
 
 | Feature                 | Endpoint / Logic                                           | Description                                    |
 | ----------------------- | ---------------------------------------------------------- | ---------------------------------------------- |
@@ -111,14 +134,15 @@ http://localhost:3000
 | Real-Time Sync (Client) | Socket.IO (`io.emit('dishUpdate')` inside `dishRoutes.js`) | Updates all connected dashboards instantly     |
 | DB Direct Sync (Bonus)  | MongoDB Change Stream (`server.js`)                        | Updates dashboard when DB is modified manually |
 
+---
 
-📎 Additional Notes
+## 📎 Additional Notes
 
-Real-time syncing ensures all open dashboards reflect changes live.
+- Real-time syncing ensures all open dashboards reflect changes live.  
+- MongoDB Change Streams allow direct DB edits (Compass / Shell) to sync instantly to UI.
 
-MongoDB Change Streams allow direct DB edits (Compass / Shell) to sync instantly to UI.
+---
 
+## ✔️ Completed and Maintained By
 
-✔️ Completed and Maintained By
-
-DK Vijendra Kumar
+**DK Vijendra Kumar**
