@@ -71,7 +71,6 @@ DishDashboardProject/
 
 ---
 
-## ⚙️ Setup and Installation
 
 ### 2. Configure Backend
 
