@@ -49,6 +49,13 @@ DishDashboardProject/
 ### Final Dashboard
 <img width="1919" height="658" alt="image" src="https://github.com/user-attachments/assets/584f1ea4-a3e7-4c86-8f29-d8e3dfee7a44" />
 
+<img width="1913" height="651" alt="image" src="https://github.com/user-attachments/assets/ecc512cf-1412-40fb-89f0-43f8b20e9291" />
+
+
+Real-Time Proof (Side-by-Side)
+<img width="1919" height="606" alt="image" src="https://github.com/user-attachments/assets/31fe5932-2493-4d78-bdb3-ec905765f74a" />
+
+
 
 ## ⚙️ Setup and Installation
 
