@@ -25,18 +25,22 @@ Changes update instantly—even when modified **directly in the database**.
 ---
 
 ## 📂 Project Structure
+
+```
 DishDashboardProject/
 ├── backend/
-│ ├── .env # Configuration variables (DB URI, PORT)
-│ ├── config/db.js # MongoDB connection + initial data population
-│ ├── models/Dish.js # Mongoose Schema
-│ ├── routes/dishRoutes.js # API routes + Socket.IO emissions
-│ └── server.js # Main server setup + Change Stream logic
+│   ├── .env                   # Configuration variables (DB URI, PORT)
+│   ├── config/db.js           # MongoDB connection + initial data population
+│   ├── models/Dish.js         # Mongoose Schema
+│   ├── routes/dishRoutes.js   # API routes + Socket.IO emissions
+│   └── server.js              # Main server setup + Change Stream logic
 └── frontend/
-├── src/
-│ ├── api/dishApi.js # Centralized Axios API service
-│ ├── hooks/useRealTime.js # Custom Socket.IO hook
-│ └── components/ # UI components (DishCard, DishList)
+    ├── src/
+    │   ├── api/dishApi.js       # Centralized Axios API service
+    │   ├── hooks/useRealTime.js # Custom Socket.IO hook
+    │   └── components/          # UI components (DishCard, DishList)
+```
+
 
 
 
