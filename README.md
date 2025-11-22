@@ -52,8 +52,12 @@ DishDashboardProject/
 <img width="1913" height="651" alt="image" src="https://github.com/user-attachments/assets/ecc512cf-1412-40fb-89f0-43f8b20e9291" />
 
 
-Real-Time Proof (Side-by-Side)
+### Real-Time Proof (Side-by-Side)
 <img width="1919" height="606" alt="image" src="https://github.com/user-attachments/assets/31fe5932-2493-4d78-bdb3-ec905765f74a" />
+
+### MongoDB (database)
+<img width="1175" height="728" alt="image" src="https://github.com/user-attachments/assets/e7f82eff-4cd6-4e5a-85aa-96d49ad74beb" />
+
 
 
 
