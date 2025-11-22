@@ -46,6 +46,10 @@ DishDashboardProject/
 
 ---
 
+### Final Dashboard
+<img width="1919" height="658" alt="image" src="https://github.com/user-attachments/assets/584f1ea4-a3e7-4c86-8f29-d8e3dfee7a44" />
+
+
 ## ⚙️ Setup and Installation
 
 ### 1. Prerequisites
