@@ -54,6 +54,7 @@ DishDashboardProject/
 
 ---
 
+## ⚙️ Setup and Installation
 
 ### 2. Configure Backend
 
@@ -64,11 +65,17 @@ cd backend
 npm install
 ```
 
-Create a `.env` file inside the backend folder:
+Create a `.env` file inside the backend folder and add your **MongoDB Atlas URI**:
 
 ```
-MONGO_URI=mongodb://localhost:27017/noshDB
+MONGO_URI=your-atlas-connection-string
 PORT=5000
+```
+
+> Example (replace `<password>` and `<dbname>`):
+
+```
+MONGO_URI=mongodb+srv://yourUser:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
 ```
 
 ---
@@ -84,16 +91,11 @@ npm install
 
 ## ▶️ How to Run the Application
 
-Run database, backend, and frontend in **separate terminals**.
+Run backend and frontend in **separate terminals**.
 
 ---
 
-### 1. Start MongoDB
-Ensure your local MongoDB service is running.
-
----
-
-### 2. Start Backend
+### 1. Start Backend
 
 In `/backend`:
 
@@ -103,13 +105,13 @@ node server.js
 
 Console will confirm:
 
-- MongoDB connection  
+- Connected to MongoDB Atlas  
 - Initial data population  
 - Socket.IO initialization  
 
 ---
 
-### 3. Start Frontend
+### 2. Start Frontend
 
 In `/frontend`:
 
@@ -139,10 +141,12 @@ http://localhost:3000
 ## 📎 Additional Notes
 
 - Real-time syncing ensures all open dashboards reflect changes live.  
-- MongoDB Change Streams allow direct DB edits (Compass / Shell) to sync instantly to UI.
+- MongoDB Change Streams work with **Atlas** (Free Tier + Dedicated Cluster).  
+- Ensure your Atlas cluster has **Change Streams enabled** (MongoDB 4.0+).
 
 ---
 
 ## ✔️ Completed and Maintained By
 
 **DK Vijendra Kumar**
+
