@@ -164,5 +164,5 @@ http://localhost:3000
 
 ## ✔️ Completed and Maintained By
 
-**DK Vijendra Kumar**
+**D K Vijendra Kumar**
 
