@@ -25,4 +25,96 @@ Changes update instantly—even when modified **directly in the database**.
 ---
 
 ## 📂 Project Structure
+DishDashboardProject/
+├── backend/
+│ ├── .env # Configuration variables (DB URI, PORT)
+│ ├── config/db.js # MongoDB connection + initial data population
+│ ├── models/Dish.js # Mongoose Schema
+│ ├── routes/dishRoutes.js # API routes + Socket.IO emissions
+│ └── server.js # Main server setup + Change Stream logic
+└── frontend/
+├── src/
+│ ├── api/dishApi.js # Centralized Axios API service
+│ ├── hooks/useRealTime.js # Custom Socket.IO hook
+│ └── components/ # UI components (DishCard, DishList)
 
+
+
+---
+
+## ⚙️ Setup and Installation
+
+### 1. Prerequisites
+- Node.js (v18+)
+- MongoDB running locally (`mongodb://localhost:27017`)
+
+---
+
+### 2. Configure Backend
+
+Navigate to the backend folder and install dependencies:
+
+```bash
+cd backend
+npm install
+
+
+Create a .env file inside the backend folder:
+MONGO_URI=mongodb://localhost:27017/noshDB
+PORT=5000
+
+
+3. Configure Frontend
+cd ../frontend
+npm install
+
+
+▶️ How to Run the Application
+
+Run database, backend, and frontend in separate terminals.
+
+1. Start MongoDB
+
+Ensure your local MongoDB service is running.
+
+2. Start Backend
+
+In /backend:
+node server.js
+
+
+Console will confirm:
+
+MongoDB connection
+
+Initial data population
+
+Socket.IO initialization
+
+3. Start Frontend
+
+In /frontend:
+npm start
+
+
+App opens at:
+http://localhost:3000
+
+| Feature                 | Endpoint / Logic                                           | Description                                    |
+| ----------------------- | ---------------------------------------------------------- | ---------------------------------------------- |
+| Fetch All Dishes        | `GET /api/dishes`                                          | Returns full dish list sorted by `dishId`      |
+| Toggle Publish Status   | `POST /api/dishes/toggle/:dishId`                          | Toggles `isPublished` in database              |
+| Real-Time Sync (Client) | Socket.IO (`io.emit('dishUpdate')` inside `dishRoutes.js`) | Updates all connected dashboards instantly     |
+| DB Direct Sync (Bonus)  | MongoDB Change Stream (`server.js`)                        | Updates dashboard when DB is modified manually |
+
+
+📎 Additional Notes
+
+Real-time syncing ensures all open dashboards reflect changes live.
+
+MongoDB Change Streams allow direct DB edits (Compass / Shell) to sync instantly to UI.
+
+
+✔️ Completed and Maintained By
+
+DK Vijendra Kumar
